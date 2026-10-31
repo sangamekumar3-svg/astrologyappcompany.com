@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astrology App Development Company | Sunra Soft Tech Pvt. Ltd.</title>
+  <meta name="description" content="Sunra Soft Tech builds turnkey AstroTalk & AstroSage-like apps with real-time chat, call billed per minute, kundli calculations, and wallet integration. Builders of TaraaTalk live app.">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- External CSS Linked -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating WhatsApp (+91 9359843915) -->
+  <a href="https://wa.me/919359843915?text=Hello%20Sunra%20Soft%20Tech,%20I%20am%20interested%20in%20Astrology%20App%20Development" 
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <svg class="wa-svg" width="30" height="30" viewBox="0 0 32 32">
+      <path d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.4 1.2 1.2-4.2-.3-.5A11.6 11.6 0 1 1 16 27.5zm6.4-8.6c-.3-.2-2-.1-2.3.1s-.6.3-.9.6-.5.4-.8.1a10.2 10.2 0 0 1-3-1.9 11.3 11.3 0 0 1-2.1-2.6c-.2-.4 0-.6.2-.8l.5-.6c.2-.2.3-.4.4-.6a.9.9 0 0 0 0-.8c-.1-.2-.9-2.2-1.2-3s-.6-.7-.9-.7h-.7a1.4 1.4 0 0 0-1 .5 4.3 4.3 0 0 0-1.3 3.2 7.6 7.6 0 0 0 1.6 4.1 17.5 17.5 0 0 0 6.7 5.9c2.8 1.2 3.4 1 4 .9a3.4 3.4 0 0 0 2.3-1.6 2.8 2.8 0 0 0 .2-1.6c-.2-.2-.5-.3-.8-.5z"/>
+    </svg>
+  </a>
+
+  <!-- Header with Mobile Responsive Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Top Logo (Returns to index.html) -->
+      <a href="index.html" class="logo-link" title="Sunra Soft Tech Pvt. Ltd. Home">
+        <div class="logo-box">
+          <img src="images/sunra-logo.webp" alt="Sunra Soft Tech Pvt Ltd" class="brand-logo">
+        </div>
+      </a>
+
+      <!-- Main Navigation with Direct Links -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          
+          <!-- Menu 1: Hello AI -->
+          <li class="nav-item has-mega">
+            <a href="javascript:void(0)" class="nav-link special-ai" onclick="toggleSubMenu(this)">✨ Hello AI <span class="arrow">▾</span></a>
+            <div class="mega-dropdown">
+              <div class="mega-left">
+                <div class="mega-title-bar">
+                  <span class="icon-circle">✨</span>
+                  <div>
+                    <h4>AI Development Services</h4>
+                    <p>Next-Gen Predictive & Generative AI</p>
+                  </div>
+                </div>
+                <div class="mega-links-grid-2">
+                  <a href="#specialized" class="mega-cell" onclick="closeMobileMenu()">✦ AI Kundli Prediction</a>
+                  <a href="#specialized" class="mega-cell" onclick="closeMobileMenu()">💬 AI Astrologer Chatbot</a>
+                  <a href="#specialized" class="mega-cell" onclick="closeMobileMenu()">🧠 Generative AI Horoscope</a>
+                  <a href="#specialized" class="mega-cell" onclick="closeMobileMenu()">🤖 Automated Transit Agents</a>
+                  <a href="#specialized" class="mega-cell" onclick="closeMobileMenu()">⚡ AI Voice Consultation</a>
+                  <a href="#specialized" class="mega-cell" onclick="closeMobileMenu()">📊 Predictive Astro Analytics</a>
+                </div>
+              </div>
+              <div class="mega-sidebar-dark">
+                <div class="side-head">
+                  <span class="side-ico">🧠</span>
+                  <div>
+                    <h5>AI Engineering</h5>
+                    <p>Vedic Model Training</p>
+                  </div>
+                </div>
+                <div class="side-badge-list">
+                  <div class="side-pill"><strong>LLM</strong> Trained on Vedic Shastras</div>
+                  <div class="side-pill"><strong>Zero Lag</strong> Swiss Ephemeris API</div>
+                </div>
+                <button onclick="openModal()" class="btn-quote" style="text-align:center;">Explore AI Tech →</button>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 2: Blockchain -->
+          <li class="nav-item has-mega">
+            <a href="javascript:void(0)" class="nav-link" onclick="toggleSubMenu(this)">Blockchain <span class="arrow">▾</span></a>
+            <div class="mega-dropdown">
+              <div class="mega-left">
+                <div class="mega-title-bar">
+                  <span class="icon-circle gold-bg">🪙</span>
+                  <div>
+                    <h4>Blockchain & Web3</h4>
+                    <p>Secure Ledger & Crypto Wallets</p>
+                  </div>
+                </div>
+                <div class="mega-links-grid-2">
+                  <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="mega-cell">💳 Crypto Exchange Dev</a>
+                  <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="mega-cell">🔑 Decentralized Wallets</a>
+                  <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="mega-cell">🎨 NFT Marketplaces</a>
+                  <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="mega-cell">📜 Smart Contracts Audit</a>
+                </div>
+              </div>
+              <div class="mega-sidebar-dark">
+                <div class="side-head">
+                  <span class="side-ico">🪙</span>
+                  <div>
+                    <h5>Web3 Ready</h5>
+                    <p>Future of Finance</p>
+                  </div>
+                </div>
+                <div class="side-badge-list">
+                  <div class="side-pill"><strong>Multi-Chain</strong> ETH, BSC, Solana</div>
+                  <div class="side-pill"><strong>Bank-Grade</strong> VAPT Security</div>
+                </div>
+                <button onclick="openModal()" class="btn-primary" style="font-size:0.85rem; padding:8px 16px;">Build With Web3 →</button>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 3: Services -->
+          <li class="nav-item has-mega">
+            <a href="javascript:void(0)" class="nav-link" onclick="toggleSubMenu(this)">Services <span class="arrow">▾</span></a>
+            <div class="mega-dropdown">
+              <div class="services-nav-col">
+                <div class="svc-nav-item active">Custom App Development ›</div>
+                <div class="svc-nav-item">Software Engineering ›</div>
+                <div class="svc-nav-item">Web Architecture ›</div>
+              </div>
+              <div class="services-content-col">
+                <h4>Custom Application Suites</h4>
+                <div class="mega-links-grid-2">
+                  <a href="#clones" class="mega-cell" onclick="closeMobileMenu()">📱 <div><strong>Mobile App</strong><span>iOS & Android</span></div></a>
+                  <a href="#taraatalk" class="mega-cell" onclick="closeMobileMenu()">🔮 <div><strong>Astrology App</strong><span>AstroTalk Clone</span></div></a>
+                  <a href="https://sunrasofttech.com/product/cab-booking-app-ka-business-model" target="_blank" class="mega-cell">🚕 <div><strong>Taxi Booking</strong><span>Real-time GPS</span></div></a>
+                  <a href="https://sunrasofttech.com/product/super-app" target="_blank" class="mega-cell">🍔 <div><strong>Super App</strong><span>Delivery & Services</span></div></a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 4: On-Demand (Direct Live Links) -->
+          <li class="nav-item has-mega">
+            <a href="javascript:void(0)" class="nav-link" onclick="toggleSubMenu(this)">On-Demand <span class="arrow">▾</span></a>
+            <div class="mega-dropdown">
+              <div class="services-nav-col">
+                <div class="svc-nav-item active">Live Solutions ›</div>
+              </div>
+              <div class="services-content-col">
+                <h4>On-Demand Marketplace Systems</h4>
+                <div class="mega-links-grid-2">
+                  <a href="https://play.google.com/store/apps/details?id=com.taraatalk.taraatalk_app" target="_blank" class="mega-cell">🔮 AstroTalk Apps (TaraaTalk)</a>
+                  <a href="https://sunrasofttech.com/product/cab-booking-app-ka-business-model" target="_blank" class="mega-cell">🚕 Taxi Booking App</a>
+                  <a href="https://sunrasofttech.com/product/super-app" target="_blank" class="mega-cell">🍔 Food Delivery App</a>
+                  <a href="https://sunrasofttech.com/product/super-app" target="_blank" class="mega-cell">📦 Logistics Super App</a>
+                  <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="mega-cell">🩺 Tele Consultation Portal</a>
+                  <a href="https://sunrasofttech.com/product/3rd-product" target="_blank" class="mega-cell">🎬 OTT Streaming App</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 5: Industry (Direct Live Links) -->
+          <li class="nav-item has-mega">
+            <a href="javascript:void(0)" class="nav-link" onclick="toggleSubMenu(this)">Industry <span class="arrow">▾</span></a>
+            <div class="mega-dropdown">
+              <div class="mega-left full-width">
+                <div class="mega-title-bar">
+                  <span class="icon-circle cyan-bg">🌐</span>
+                  <div>
+                    <h4>Industry Verticals We Serve</h4>
+                    <p>Battle-Tested Commercial Platforms</p>
+                  </div>
+                </div>
+                <div class="industry-grid">
+                  <a href="https://play.google.com/store/apps/details?id=com.taraatalk.taraatalk_app" target="_blank" class="ind-item">🔮 Astrology (TaraaTalk)</a>
+                  <a href="https://sunrasofttech.com/product/fruit-hub-app" target="_blank" class="ind-item">🩺 Healthcare (Fruit Hub)</a>
+                  <a href="https://sunrasofttech.com/product/job-search-app" target="_blank" class="ind-item">🎓 Education & Jobs</a>
+                  <a href="https://sunrasofttech.com/product/meesho-jaisa-app-kaise-banaye" target="_blank" class="ind-item">🛒 eCommerce (Meesho Clone)</a>
+                  <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="ind-item">🏛️ FinTech & Consulting</a>
+                  <a href="https://sunrasofttech.com/product/super-app" target="_blank" class="ind-item">🚚 Logistics & Delivery</a>
+                  <a href="https://sunrasofttech.com/product/3rd-product" target="_blank" class="ind-item">🎬 OTT Media Platform</a>
+                  <a href="https://sunrasofttech.com/product/cab-booking-app-ka-business-model" target="_blank" class="ind-item">🚗 Mobility & Taxi</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Menu 6: Company -->
+          <li class="nav-item has-mega">
+            <a href="javascript:void(0)" class="nav-link" onclick="toggleSubMenu(this)">Company <span class="arrow">▾</span></a>
+            <div class="mega-dropdown">
+              <div class="mega-left">
+                <div class="mega-title-bar">
+                  <span class="icon-circle">🏢</span>
+                  <div>
+                    <h4>About Sunra Soft Tech</h4>
+                    <p>Engineering Digital Success</p>
+                  </div>
+                </div>
+                <div class="mega-links-grid-2">
+                  <a href="#taraatalk" class="mega-cell" onclick="closeMobileMenu()">👥 <div><strong>Live Case Studies</strong><span>TaraaTalk success</span></div></a>
+                  <a href="#process" class="mega-cell" onclick="closeMobileMenu()">🚀 <div><strong>How We Work</strong><span>Agile process</span></div></a>
+                  <a href="#why-sunra" class="mega-cell" onclick="closeMobileMenu()">🌟 <div><strong>Why Us</strong><span>Core advantages</span></div></a>
+                  <a href="#consultation" class="mega-cell" onclick="closeMobileMenu()">📁 <div><strong>Contact Architects</strong><span>Direct technical talk</span></div></a>
+                </div>
+              </div>
+              <div class="mega-sidebar-dark">
+                <div class="company-stat-card"><h3>350+</h3><span>Apps Delivered</span></div>
+                <div class="company-stat-card"><h3>₹90K+</h3><span>Monthly Client Rev</span></div>
+                <div class="company-stat-card"><h3>12+</h3><span>Years Experience</span></div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Right Action Area -->
+      <div class="header-right">
+        <button onclick="openModal()" class="btn btn-quote">Get Quote</button>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation">☰</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section">
+      <!-- Ambient WebM Video Layer -->
+      <div class="hero-video-container">
+        <video class="hero-video-bg" autoplay muted loop playsinline preload="auto">
+          <source src="images/astrology-bg.webm" type="video/webm">
+          <source src="images/astrology-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="badge-pill">★ Astrology App Developers Since 2012</div>
+          <h1 class="hero-title">
+            Astrology App<br>
+            Development<br>
+            <span>Company</span>
+          </h1>
+          <h2 class="hero-subtitle">AstroTalk & AstroSage-Like App Development</h2>
+          <p class="hero-desc">
+            We build AstroTalk-style consultation apps with chat and call billed per minute, wallet, kundli, and horoscopes.
+          </p>
+          <p class="hero-highlight">
+            <strong>MVP live in 4 to 6 weeks,</strong> with full source code ownership.
+          </p>
+
+          <div class="hero-cta-wrap">
+            <button onclick="openModal()" class="btn btn-primary btn-lg">
+              Get a Fixed Price Quote &rarr;
+            </button>
+          </div>
+
+          <div class="hero-stats-box">
+            <div class="stat-col">
+              <div class="stat-icon">💡</div>
+              <div class="stat-data"><strong>12+</strong><span>Years Experience</span></div>
+            </div>
+            <div class="stat-col">
+              <div class="stat-icon">👥</div>
+              <div class="stat-data"><strong>350+</strong><span>Apps Delivered</span></div>
+            </div>
+            <div class="stat-col">
+              <div class="stat-icon">🌐</div>
+              <div class="stat-data"><strong>Global</strong><span>Clients</span></div>
+            </div>
+            <div class="stat-col">
+              <div class="stat-icon">🛡️</div>
+              <div class="stat-data"><strong>Long Term</strong><span>Support</span></div>
+            </div>
+          </div>
+
+          <div class="hero-check-tags">
+            <span class="check-tag">✔ Fixed Price Packages</span>
+            <span class="check-tag">✔ Full Source Code Ownership</span>
+            <span class="check-tag">✔ Sunra Soft Tech Pvt. Ltd.</span>
+          </div>
+        </div>
+
+        <!-- Phone Mockup Container -->
+        <div class="hero-mockup-wrapper">
+          <div class="mockup-inner">
+            <img src="images/app-mockup.webp" alt="Astrology App Mockup" class="phone-mockup-img">
+
+            <div class="float-badge badge-top-left">
+              <img src="images/check.webp" alt="Check" class="badge-icon">
+              <div class="badge-text"><span class="badge-bold">Session Complete! ✨</span><span class="badge-sub">15 min call with Pt. Sharma</span></div>
+            </div>
+
+            <div class="float-badge badge-top-right">
+              <img src="images/user.webp" alt="User" class="badge-icon">
+              <div class="badge-text"><span class="badge-bold">600+</span><span class="badge-sub">Verified astrologers</span></div>
+            </div>
+
+            <div class="float-badge badge-mid-right">
+              <img src="images/call.webp" alt="Call" class="badge-icon-sm">
+              <span class="badge-bold text-white">24/7 Available</span>
+            </div>
+
+            <div class="float-badge badge-bottom-right">
+              <img src="images/hour-glass.webp" alt="Hourglass" class="badge-icon">
+              <div class="badge-text"><span class="badge-bold">1M+ Downloads</span><span class="badge-sub">On a live app we built</span></div>
+            </div>
+
+            <div class="float-badge badge-bottom-left">
+              <img src="images/star (1).webp" alt="Star" class="badge-icon">
+              <div class="badge-text"><span class="badge-bold">First Chat FREE</span><span class="badge-sub">New user offer</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROVEN LIVE SUCCESS: TARATALK APP CASE STUDY -->
+    <section id="taraatalk" class="taraatalk-case-study">
+      <div class="container">
+        <div class="case-study-card">
+          <div class="case-study-content">
+            <span class="tag-verified">✔ Live Production Case Study</span>
+            <div class="case-study-header">
+              <img src="images/taraatalk-logo.webp" alt="TaraaTalk App Logo" class="taraatalk-logo-img">
+              <div>
+                <h3>TaraaTalk — Live Astrology App</h3>
+                <p>Engineered & Deployed by Sunra Soft Tech Pvt. Ltd.</p>
+              </div>
+            </div>
+            <p style="color: #94a3b8; font-size: 0.95rem;">
+              TaraaTalk is a real-world, commercial on-demand astrologer marketplace operating successfully on the Google Play Store. Built with per-minute metered wallet deductions, live voice/video calling, and real-time Kundli calculations.
+            </p>
+
+            <div class="case-metrics-grid">
+              <div class="metric-box">
+                <strong>₹80,000 - ₹90,000+</strong>
+                <span>Monthly Client Revenue</span>
+              </div>
+              <div class="metric-box">
+                <strong>4.8 ★</strong>
+                <span>Play Store Rating</span>
+              </div>
+              <div class="metric-box">
+                <strong>100%</strong>
+                <span>Uptime WebRTC Engine</span>
+              </div>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.taraatalk.taraatalk_app" target="_blank" rel="noopener noreferrer" class="btn-playstore">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14.3 8.5c.7.4.7 1.4 0 1.8L4.6 21.3c-.66.5-1.6.03-1.6-.8z"/></svg>
+              View TaraaTalk on Google Play Store &rarr;
+            </a>
+          </div>
+
+          <div class="case-study-preview">
+            <h4>Live Features Deployed in TaraaTalk:</h4>
+            <ul class="case-features-list">
+              <li><span>✔</span> Real-Time Audio & Video Consultation via WebRTC</li>
+              <li><span>✔</span> Automatic Second-by-Second Wallet Metering</li>
+              <li><span>✔</span> Verified Astrologer Onboarding & KYC Dashboard</li>
+              <li><span>✔</span> Automated Swiss Ephemeris Kundli Generation</li>
+              <li><span>✔</span> Integrated UPI, Razorpay & Instant Recharge Gateways</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: CLONE SOLUTIONS (Rich Royal Indigo Dark Theme) -->
+    <section id="clones" class="section-padding section-clones">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Marketplace Frameworks</span>
+          <h2>Ready-to-Deploy <span style="color: var(--primary);">Clone Solutions</span></h2>
+          <p>Launch your custom consultation business using battle-tested architectural blueprints adapted to your brand identity.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="clone-card">
+            <div>
+              <span class="badge-model">High Transaction Volume</span>
+              <h3>AstroTalk Clone</h3>
+              <p>Turnkey on-demand marketplace connecting users with verified pandits and astrologers in real-time.</p>
+              <ul>
+                <li>✓ Per-minute voice, video & chat billing</li>
+                <li>✓ Closed-loop prepaid wallet with UPI</li>
+                <li>✓ Dynamic queue & waitlist notifications</li>
+                <li>✓ Astrologer revenue commission engine</li>
+              </ul>
+            </div>
+            <button onclick="openModal()" class="btn-quote" style="margin-top:20px; width:100%; text-align:center;">Deploy AstroTalk Clone</button>
+          </div>
+
+          <div class="clone-card">
+            <div>
+              <span class="badge-model">Vedic Calculation Authority</span>
+              <h3>AstroSage Clone</h3>
+              <p>Content-rich spiritual portal offering deep horoscope calculations, panchang, and personalized PDF reports.</p>
+              <ul>
+                <li>✓ Swiss Ephemeris Kundli calculation engine</li>
+                <li>✓ Ashtakoot Guna Milan matchmaking</li>
+                <li>✓ Dasha, Sade Sati & Manglik dosha analysis</li>
+                <li>✓ Multi-language localized panchang</li>
+              </ul>
+            </div>
+            <button onclick="openModal()" class="btn-quote" style="margin-top:20px; width:100%; text-align:center;">Deploy AstroSage Clone</button>
+          </div>
+
+          <div class="clone-card">
+            <div>
+              <span class="badge-model">Spiritual E-Commerce</span>
+              <h3>Vama / InstaAstro Clone</h3>
+              <p>Unified spiritual platform offering virtual poojas, live temple mandir darshans, and authenticated gemstones.</p>
+              <ul>
+                <li>✓ E-Pooja booking & live priest streaming</li>
+                <li>✓ Certified gemstone & rudraksha store</li>
+                <li>✓ Astrologer product prescriptions</li>
+                <li>✓ Logistics & doorstep prasadam tracking</li>
+              </ul>
+            </div>
+            <button onclick="openModal()" class="btn-quote" style="margin-top:20px; width:100%; text-align:center;">Deploy Vama Clone</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SPECIALIZED SOLUTIONS (Crisp Clean White / Light Theme) -->
+    <section id="specialized" class="section-padding section-specialized-light">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Divination Disciplines</span>
+          <h2>Specialized <span>Astrological Solutions</span></h2>
+          <p>We build specialized calculation and consulting engines covering every traditional and modern divination branch.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="spec-card-light">
+            <span class="spec-icon">🪐</span>
+            <h3>Vedic Astrology</h3>
+            <p>Precise planetary longitude mapping, 16 divisional charts (Shodashvarga), Vimshottari Dasha, and transit forecasting.</p>
+          </div>
+
+          <div class="spec-card-light">
+            <span class="spec-icon">🃏</span>
+            <h3>Tarot & Oracle Cards</h3>
+            <p>Interactive 3D card shuffling, multi-card spreads (Celtic Cross, Love, Career), and instant AI interpretation layers.</p>
+          </div>
+
+          <div class="spec-card-light">
+            <span class="spec-icon">☀️</span>
+            <h3>Western Horoscope</h3>
+            <p>Tropical zodiac calculations, house system models (Placidus, Koch), synastry charts, and natal aspect grids.</p>
+          </div>
+
+          <div class="spec-card-light">
+            <span class="spec-icon">🔢</span>
+            <h3>Numerology Systems</h3>
+            <p>Pythagorean & Chaldean calculators generating Life Path, Destiny, Soul Urge, and lucky gem recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: COMPREHENSIVE FEATURES (Soft Warm Cream / Spiritual Theme) -->
+    <section id="features" class="section-padding section-features-warm">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Platform Capability</span>
+          <h2>Comprehensive <span>Platform Features</span></h2>
+          <p>Enterprise features engineered for maximum monetization, user retention, and seamless user experiences.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feat-card-warm">
+            <div class="feat-icon">🎙️</div>
+            <h3>Per-Second Billed Audio/Video</h3>
+            <p>Ultra-low latency Agora/WebRTC infrastructure with auto-metered wallet deduction and smooth reconnection fallback.</p>
+          </div>
+
+          <div class="feat-card-warm">
+            <div class="feat-icon">💳</div>
+            <h3>Automated Prepaid Wallet</h3>
+            <p>Instant UPI, debit/credit cards, and net-banking recharges. Automatic TDS calculation and astrologer payout splits.</p>
+          </div>
+
+          <div class="feat-card-warm">
+            <div class="feat-icon">📹</div>
+            <h3>Live Streaming & Super Gifting</h3>
+            <p>Astrologers host interactive public broadcasts where users send spiritual virtual gifts to ask priority questions.</p>
+          </div>
+
+          <div class="feat-card-warm">
+            <div class="feat-icon">🤖</div>
+            <h3>AI Astrologer Assistant</h3>
+            <p>24/7 conversational Vedic AI trained to deliver instant daily guidance, customized remedies, and quick horoscopes.</p>
+          </div>
+
+          <div class="feat-card-warm">
+            <div class="feat-icon">📄</div>
+            <h3>Kundli PDF Report Generator</h3>
+            <p>Dynamic automated 50+ page high-resolution PDF birth chart report generation for instant in-app sale and download.</p>
+          </div>
+
+          <div class="feat-card-warm">
+            <div class="feat-icon">🛍️</div>
+            <h3>Astro-Commerce Store</h3>
+            <p>Integrated spiritual store to retail gemstones, energized yantras, and remedial poojas prescribed by astrologers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SECURITY & COMPLIANCE (Deep Vault Slate) -->
+    <section id="security" class="section-padding section-security-slate">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Trust & Governance</span>
+          <h2>Security & <span style="color: #10b981;">Regulatory Compliance</span></h2>
+          <p>Bank-grade encryption, privacy safeguards, and compliance with Indian digital laws.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="sec-card-slate">
+            <h4>🛡️ DPDP Act 2027 Ready</h4>
+            <p>Strict user consent mechanisms, data deletion requests, and zero storage of private consultation audio logs.</p>
+          </div>
+
+          <div class="sec-card-slate">
+            <h4>🔒 End-to-End Encryption</h4>
+            <p>SSL/TLS encrypted APIs with AES-256 chat database encryption ensuring complete astrologer-client anonymity.</p>
+          </div>
+
+          <div class="sec-card-slate">
+            <h4>💳 PCI-DSS Payment Standards</h4>
+            <p>Secure tokenized payment gateways with zero credit card or UPI pin storage on your application database.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: OUR 6-PHASE PROCESS (Crisp White with Dynamic Interactive Hover) -->
+    <section id="process" class="section-padding section-process-white">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Agile Execution</span>
+          <h2>Our 6-Phase <span>Development Process</span></h2>
+          <p>Transparent milestones from concept to Google Play Store & Apple App Store launch.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="step-box-interactive">
+            <span class="step-num-interactive">01</span>
+            <h4>Discovery & Scope Blueprint</h4>
+            <p>Defining features, business monetization tiers, revenue splits, and API ephemeris integrations.</p>
+          </div>
+
+          <div class="step-box-interactive">
+            <span class="step-num-interactive">02</span>
+            <h4>UI/UX Prototyping</h4>
+            <p>Crafting high-converting, spiritual user flows, astrologer management interfaces, and queue UI in Figma.</p>
+          </div>
+
+          <div class="step-box-interactive">
+            <span class="step-num-interactive">03</span>
+            <h4>Core Engine Engineering</h4>
+            <p>Building real-time WebSockets, WebRTC calling servers, Swiss Ephemeris microservices, and ledger wallets.</p>
+          </div>
+
+          <div class="step-box-interactive">
+            <span class="step-num-interactive">04</span>
+            <h4>Rigorous QA & Network Testing</h4>
+            <p>Testing per-second billing under spotty 3G/4G networks, call drops, and high-concurrency wallet transactions.</p>
+          </div>
+
+          <div class="step-box-interactive">
+            <span class="step-num-interactive">05</span>
+            <h4>App Store Deployment</h4>
+            <p>Publishing compliant apps to Google Play Store and Apple App Store with full ASO meta optimization.</p>
+          </div>
+
+          <div class="step-box-interactive">
+            <span class="step-num-interactive">06</span>
+            <h4>6 Months Free Maintenance</h4>
+            <p>Continuous panchang database updates, Android/iOS OS compatibility patches, and server scaling support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: TECHNOLOGY STACK (Royal Dark Navy) -->
+    <section id="tech-stack" class="section-padding section-tech-dark">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Robust Stack</span>
+          <h2>Modern <span style="color: #38bdf8;">Technology Stack</span></h2>
+          <p>Engineered for horizontal scalability, zero call latency, and 99.99% operational uptime.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="tech-card-interactive">
+            <h4>Mobile Apps</h4>
+            <p>Flutter, React Native, Swift (iOS), Kotlin (Android)</p>
+          </div>
+
+          <div class="tech-card-interactive">
+            <h4>Backend Core</h4>
+            <p>Node.js, Python, Go, Swiss Ephemeris C-Library</p>
+          </div>
+
+          <div class="tech-card-interactive">
+            <h4>Real-Time Media</h4>
+            <p>WebRTC, Agora Audio/Video SDK, WebSockets, Socket.io</p>
+          </div>
+
+          <div class="tech-card-interactive">
+            <h4>Databases & Queues</h4>
+            <p>PostgreSQL (Ledger), Redis (State/Queue), MongoDB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: WHY SUNRA SOFT TECH (Ice Green Tech Surface) -->
+    <section id="why-sunra" class="section-padding section-why-ice">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Engineering Advantage</span>
+          <h2>Why Partner with <span>Sunra Soft Tech</span></h2>
+          <p>We combine deep domain understanding of Indian spiritual psychology with top-tier product engineering.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="why-card-ice">
+            <h4>100% Source Code Ownership</h4>
+            <p>No monthly developer lock-ins. You receive complete intellectual property and source code rights from Day 1.</p>
+          </div>
+
+          <div class="why-card-ice">
+            <h4>Live Market Track Record</h4>
+            <p>Builders of real apps generating over ₹80K-₹90K monthly revenues like TaraaTalk on the Google Play Store.</p>
+          </div>
+
+          <div class="why-card-ice">
+            <h4>Fixed Price & Guaranteed Timelines</h4>
+            <p>Transparent milestones with MVP delivery within 4 to 6 weeks. No surprise costs or runaway budgets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: AT A GLANCE COMPARISON TABLE (Clean Pure White) -->
+    <section id="glance" class="section-padding section-table-white">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Platform Overview</span>
+          <h2>Astrology App Development <span style="color: #0284c7;">at a Glance</span></h2>
+          <p>Everything you need to know about budgets, launch schedules, and platform deliverables.</p>
+        </div>
+
+        <div class="table-container-light">
+          <table>
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>MVP Launch Package</th>
+                <th>Custom Marketplace</th>
+                <th>Enterprise Scaled Solution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Delivery Timeline</strong></td>
+                <td>4 to 6 Weeks</td>
+                <td>8 to 12 Weeks</td>
+                <td>12 to 16 Weeks</td>
+              </tr>
+              <tr>
+                <td><strong>Estimated Budget</strong></td>
+                <td>₹2.5 Lakh - ₹4.5 Lakh</td>
+                <td>₹4.5 Lakh - ₹8.5 Lakh</td>
+                <td>₹8.5 Lakh - ₹18 Lakh</td>
+              </tr>
+              <tr>
+                <td><strong>Platforms Included</strong></td>
+                <td>Android App & Admin Panel</td>
+                <td>Android, iOS, Astrologer & Admin</td>
+                <td>Full Native Apps, Web & Streaming</td>
+              </tr>
+              <tr>
+                <td><strong>Calling Engine</strong></td>
+                <td>WebRTC Audio & Chat</td>
+                <td>HD Voice & Video Consultations</td>
+                <td>Live Broadcast, Gifting & HD Video</td>
+              </tr>
+              <tr>
+                <td><strong>Ephemeris Engine</strong></td>
+                <td>Basic Natal Kundli & Doshas</td>
+                <td>Swiss Ephemeris with 16 Varga Charts</td>
+                <td>AI Vedic Predictive LLM + Ephemeris</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FAQS (INTERACTIVE ACCORDION - Dark Velvet) -->
+    <section id="faqs" class="section-padding section-faq-dark">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Got Questions?</span>
+          <h2>Frequently Asked <span style="color: var(--primary);">Questions</span></h2>
+          <p>Common questions founders ask before developing an astrology consultation application.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>How does per-minute consultation billing work?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              When a user initiates an audio call, video call, or chat with an astrologer, our real-time websocket server verifies their wallet balance. The system automatically debits the user's wallet second-by-second at the astrologer's set rate (e.g., ₹25/min). If the balance runs out, the call automatically disconnects.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>How accurate are the Kundli and Horoscope calculations?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              We integrate the industry-standard Swiss Ephemeris astronomical library, which powers leading software like AstroSage. It calculates precise planetary longitudes, ascendants, and dashas accurate to fractions of a second of arc.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Will I own the complete source code and database?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, 100%. Upon project completion and final milestone sign-off, Sunra Soft Tech transfers the full intellectual property rights, GitHub repositories, and server credentials directly to your organization.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              <span>Can astrologers withdraw their earnings automatically?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes. Astrologers have a dedicated wallet dashboard showing consultation minutes, gross earnings, and platform commission deductions. They can request payouts via UPI or bank transfer directly through the astrologer app.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: RELATED ON-DEMAND HUBS (Light Slate Grid) -->
+    <section id="related-solutions" class="section-padding section-related-light">
+      <div class="container">
+        <div class="section-title">
+          <span class="pill-tag">Our Full Range</span>
+          <h2>More Consultation & <span style="color: #0284c7;">Lifestyle App Solutions</span></h2>
+          <p>Explore related on-demand applications we build across diverse commercial verticals.</p>
+        </div>
+
+        <div class="related-grid">
+          <a href="https://sunrasofttech.com/product/cab-booking-app-ka-business-model" target="_blank" class="related-card-light">
+            <span>🚕 Taxi Booking App</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://sunrasofttech.com/product/fruit-hub-app" target="_blank" class="related-card-light">
+            <span>🩺 Doctor & Telemedicine App</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://sunrasofttech.com/product/job-search-app" target="_blank" class="related-card-light">
+            <span>🎓 Tutor & Education App</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://sunrasofttech.com/product/super-app" target="_blank" class="related-card-light">
+            <span>🍔 Food & Grocery Delivery</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://sunrasofttech.com/product/3rd-product" target="_blank" class="related-card-light">
+            <span>🎬 OTT Video Streaming</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://sunrasofttech.com/product/meesho-jaisa-app-kaise-banaye" target="_blank" class="related-card-light">
+            <span>🛒 Multi-Vendor eCommerce</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://sunrasofttech.com/product/consultancy-website" target="_blank" class="related-card-light">
+            <span>⚖️ Lawyer & Legal Services App</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.taraatalk.taraatalk_app" target="_blank" class="related-card-light">
+            <span>🔮 Dating & Matchmaking App</span>
+            <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 11: BOOK A FREE CONSULTATION FORM (Direct WhatsApp Integration) -->
+    <section id="consultation" class="consultation-section">
+      <div class="container">
+        <div class="consultation-wrapper">
+          <div class="consultation-info">
+            <span class="response-badge">⚡ Response within 24 Hours Guaranteed</span>
+            <h2>Let's Build the Next Big <span>Astrology App Together</span></h2>
+            <p>Tell us your city, your astrology systems, and the package you have in mind. You will have a fixed price quote, a timeline, and a scope document within 48 hours.</p>
+            <div class="company-bullets">
+              <p>🏢 <strong>Company:</strong> Sunra Soft Tech Private Limited</p>
+              <p>📱 <strong>Direct WhatsApp:</strong> +91 9359843915</p>
+              <p>✉️ <strong>Official Email:</strong> contact@sunrasofttech.com</p>
+              <p>🛡️ <strong>NDA:</strong> 100% Confidentiality & Source Code Ownership</p>
+            </div>
+          </div>
+
+          <div class="consultation-form-card">
+            <form onsubmit="handleConsultationSubmit(event)">
+              <div class="form-group">
+                <label>Full Name <span class="required">*</span></label>
+                <input type="text" id="consultName" placeholder="e.g. Rahul Sharma" required>
+              </div>
+
+              <div class="form-group">
+                <label>Mobile / WhatsApp Number <span class="required">*</span></label>
+                <input type="tel" id="consultPhone" placeholder="+91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label>Email Address <span class="optional">(Optional)</span></label>
+                <input type="email" id="consultEmail" placeholder="name@domain.com">
+              </div>
+
+              <div class="form-group">
+                <label>Project Description <span class="optional">(Optional)</span></label>
+                <textarea id="consultDesc" placeholder="Tell us about features, budget, or preferred reference app (e.g. AstroTalk clone)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary btn-block" style="padding:14px; text-align:center;">Start Your Project &rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Modal Pop-up -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="modal-card">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <h3 style="margin-bottom: 8px; color:#fff;">Discuss Your Project</h3>
+      <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px;">
+        Share details with Sunra Soft Tech engineers directly on WhatsApp.
+      </p>
+      <form onsubmit="sendModalToWhatsApp(event)">
+        <div class="form-group">
+          <label style="color:#cbd5e1;">Your Name <span class="required">*</span></label>
+          <input type="text" id="mName" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label style="color:#cbd5e1;">WhatsApp Number <span class="required">*</span></label>
+          <input type="tel" id="mPhone" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label style="color:#cbd5e1;">App Requirement</label>
+          <select id="mRequirement">
+            <option value="AstroTalk Consultation App">AstroTalk Consultation App</option>
+            <option value="Kundli & Horoscope Software">Kundli & Horoscope Software</option>
+            <option value="Live Video Streaming App">Live Video Streaming App</option>
+            <option value="Custom Spiritual Tech Solution">Custom Spiritual Tech Solution</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary btn-block" style="padding:12px; margin-top:10px;">Connect on WhatsApp &rarr;</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer with Working Privacy Policy Link -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-link" title="Sunra Soft Tech Home">
+          <div class="logo-box">
+            <img src="images/sunra-logo.webp" alt="Sunra Soft Tech" class="brand-logo">
+          </div>
+        </a>
+        <p>Sunra Soft Tech Private Limited — Delivering enterprise-grade mobile applications, on-demand marketplace solutions, and Web3 engines worldwide.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Our Products</h4>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.taraatalk.taraatalk_app" target="_blank">TaraaTalk Astrology App</a></li>
+          <li><a href="https://sunrasofttech.com/product/cab-booking-app-ka-business-model" target="_blank">Taxi Booking App</a></li>
+          <li><a href="https://sunrasofttech.com/product/super-app" target="_blank">Food & Super App</a></li>
+          <li><a href="https://sunrasofttech.com/product/3rd-product" target="_blank">OTT Streaming App</a></li>
+          <li><a href="https://sunrasofttech.com/product/meesho-jaisa-app-kaise-banaye" target="_blank">eCommerce App Platform</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Industry Solutions</h4>
+        <ul>
+          <li><a href="https://sunrasofttech.com/product/fruit-hub-app" target="_blank">Healthcare Platform</a></li>
+          <li><a href="https://sunrasofttech.com/product/job-search-app" target="_blank">Education & Career App</a></li>
+          <li><a href="https://sunrasofttech.com/product/consultancy-website" target="_blank">FinTech & Tele-Consultation</a></li>
+          <li><a href="https://sunrasofttech.com/product/super-app" target="_blank">Logistics Dispatch</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#clones">Clone Solutions</a></li>
+          <li><a href="privacy-policy/index.html">Privacy Policy</a></li>
+          <li><a href="#consultation">Book Consultation</a></li>
+          <li><a href="https://wa.me/919359843915" target="_blank">Direct WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sunra Soft Tech Private Limited. All Rights Reserved.</p>
+      <div class="footer-legal-links">
+        <a href="privacy-policy/index.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Interactive Components -->
+  <script>
+    const TARGET_WHATSAPP = "919359843915";
+
+    // Toggle Mobile Navigation Drawer
+    function toggleMobileMenu() {
+      const nav = document.getElementById("mainNav");
+      nav.classList.toggle("active");
+    }
+
+    function closeMobileMenu() {
+      const nav = document.getElementById("mainNav");
+      if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+      }
+    }
+
+    // Toggle Submenus inside Mobile View
+    function toggleSubMenu(element) {
+      if (window.innerWidth <= 992) {
+        const parent = element.parentElement;
+        const allItems = document.querySelectorAll(".nav-item.has-mega");
+        allItems.forEach(item => {
+          if (item !== parent) item.classList.remove("open");
+        });
+        parent.classList.toggle("open");
+      }
+    }
+
+    // Toggle Accordion FAQs
+    function toggleFaq(element) {
+      const faqItem = element.parentElement;
+      faqItem.classList.toggle("active");
+    }
+
+    // Consultation Lead Submission to WhatsApp
+    function handleConsultationSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById("consultName").value.trim();
+      const phone = document.getElementById("consultPhone").value.trim();
+      const email = document.getElementById("consultEmail").value.trim() || "Not provided";
+      const desc = document.getElementById("consultDesc").value.trim() || "Interested in Astrology App Development";
+
+      const text = `Hello Sunra Soft Tech!%0A%0A*New Consultation Request:*%0A- *Name:* ${encodeURIComponent(name)}%0A- *Phone:* ${encodeURIComponent(phone)}%0A- *Email:* ${encodeURIComponent(email)}%0A- *Project Details:* ${encodeURIComponent(desc)}`;
+
+      window.open(`https://wa.me/${TARGET_WHATSAPP}?text=${text}`, "_blank");
+    }
+
+    // Modal Functions
+    function openModal() {
+      document.getElementById("projectModal").classList.add("active");
+    }
+
+    function closeModal() {
+      document.getElementById("projectModal").classList.remove("active");
+    }
+
+    function sendModalToWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById("mName").value.trim();
+      const phone = document.getElementById("mPhone").value.trim();
+      const req = document.getElementById("mRequirement").value;
+
+      const message = `Hello Sunra Soft Tech,%0A%0AI clicked on 'Discuss Your Project':%0A- *Name:* ${encodeURIComponent(name)}%0A- *Phone:* ${encodeURIComponent(phone)}%0A- *Requirement:* ${encodeURIComponent(req)}`;
+      window.open(`https://wa.me/${TARGET_WHATSAPP}?text=${message}`, "_blank");
+      closeModal();
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("projectModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+
+</body>
+</html>

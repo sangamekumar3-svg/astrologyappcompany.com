@@ -1,0 +1,24 @@
+{
+  "name": "Sunra Soft Tech – Astrology App Development",
+  "short_name": "Sunra Soft Tech",
+  "description": "Leading Astrology App Development Company. Builders of AstroTalk-style consultation apps with live WebRTC chat, call, and Kundli engines.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070a14",
+  "theme_color": "#f59e0b",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
